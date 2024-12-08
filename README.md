@@ -21,11 +21,21 @@ global_mmlu_ja = load_dataset("CohereForAI/Global-MMLU", 'ja')
 global_mmlu_ja["dev"] = ds["train"]
 ```
 
+
 ## Running Annotation/Editing Tool
+Env setup
 ```
 conda create -n hf python=3.11
 pip install -r requirements
+```
 
+Export Global-MMLU EN dataset to JSON
+```
+python hf_dataset_to_json.py
+```
+
+Run
+```
 python editing_tool.py
 ```
 
