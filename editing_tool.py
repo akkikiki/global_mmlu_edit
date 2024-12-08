@@ -69,7 +69,8 @@ class App(tk.Tk):
             with open(file_path, "r", encoding="utf-8") as f:
                 self.data1 = [json.loads(line) for line in f]
             for data1 in self.data1:
-                data1["is_edited"] = False
+                if "is_edited" in self.data1 and not self.data1["is_edited"]:
+                    data1["is_edited"] = False
             self.edited_data1 = self.data1.copy()
             self.show_data()
 
@@ -79,7 +80,8 @@ class App(tk.Tk):
             with open(file_path, "r", encoding="utf-8") as f:
                 self.data2 = [json.loads(line) for line in f]
             for data2 in self.data2:
-                data2["is_edited"] = False
+                if "is_edited" in self.data2 and not self.data2["is_edited"]:
+                    data2["is_edited"] = False
             self.edited_data2 = self.data2.copy()
             self.show_data()
 
