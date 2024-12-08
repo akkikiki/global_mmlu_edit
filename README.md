@@ -44,7 +44,7 @@ This editing tool assumes that the file you want to edit it loaded as "File 1" a
 Make sure to hit "save" after you edit it to save that example, and hit "export" to export all examples.
 
 
-Citation Information
+## References
 The original Global-MMLU dataset is at https://huggingface.co/datasets/CohereForAI/Global-MMLU
 
 Original preprint:
