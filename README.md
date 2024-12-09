@@ -1,6 +1,6 @@
 # global_mmlu_edit
 
-Huggingface dataset: https://huggingface.co/datasets/akkikiki/global_mmlu_ja_edited
+📘 Huggingface dataset: https://huggingface.co/datasets/akkikiki/global_mmlu_ja_edited
 
 This repository contains 1) the edited JA dev dataset for Gloabl MMLU, and 2) a simple GUI tool I used to compare with the English version of it.
 
